@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Instant Job Post</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form [formGroup]="jobForm" (ngSubmit)="onSubmit()" padding-right>
+
+          <ion-item>
+            <ion-label style="font-size:12px;font-weight: 500;">Job Category</ion-label>
+            
+            <ion-input id="field" formControlName="category" ></ion-input>
+       
+          </ion-item>     
+          <!-- <ion-item>
+            <ion-label style="font-size:12px;font-weight: 500;">Job Sub category</ion-label>
+            <ion-input id="field" formControlName="sub_categotry"></ion-input>
+          </ion-item>        
+           -->
+          <ion-item>
+            <ion-label style="font-size:12px;font-weight: 500;">Job title</ion-label>
+            <ion-input id="field" formControlName="title"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label style="font-size:12px;font-weight: 500;">Job description</ion-label>
+            <ion-input id="field" formControlName="description"></ion-input>
+          </ion-item>
+
+          
+          <ion-item>
+            <ion-label style="font-size:12px;font-weight: 500;">No. of Person Needed</ion-label>
+            <ion-input id="field" formControlName="persons"></ion-input>
+          </ion-item>
+
+          
+          <ion-item>
+            <ion-label style="font-size:12px;font-weight: 500;">Price</ion-label>
+            <ion-input id="field" formControlName="price"></ion-input>
+          </ion-item>
+
+        
+          <!-- <ion-item>
+          <ion-label style="font-size:12px;font-weight: 500;">Years of Experience</ion-label>
+          <ion-select placeholder="Select exp" style="float:left;font-size:12px;" formControlName="exp">
+            <ion-select-option value="fresher" >0</ion-select-option>
+            <ion-select-option value="mid">1-3</ion-select-option>
+            <ion-select-option value="prof">4-6</ion-select-option>
+          </ion-select>
+        </ion-item>         -->
+
+        <div style="display: flex; justify-content: center;margin-top:25px">
+         <ion-button type="submit" >SUBMIT</ion-button>
+        </div>
+
+  </form>
+
+</ion-content>

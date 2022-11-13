@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>category</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item *ngFor="let item of category; let i = index;">
+
+
+
+<ion-thumbnail slot="start">
+  <img alt="Silhouette of mountains" src="https://teddiapp.com/app/assets/admin/image/category/{{item.images}}" />
+</ion-thumbnail>
+<ion-label>{{item.category}}</ion-label>
+
+    </ion-item>  
+  
+  
+  
+  </ion-list>
+    
+
+</ion-content>

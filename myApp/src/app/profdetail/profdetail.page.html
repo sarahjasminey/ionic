@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Proffessional Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form [formGroup]="profForm" (ngSubmit)="onSubmit()" padding-right>
+
+          <ion-item>
+            <ion-label style="font-size:12px;font-weight: 500;">Qualification</ion-label>
+            <ion-input id="degree" formControlName="degree"></ion-input>
+          </ion-item>   
+              
+          <ion-item>
+            <ion-label style="font-size:12px;font-weight: 500;">Proffessional Field</ion-label>
+            <ion-input id="field" formControlName="field"></ion-input>
+          </ion-item>        
+          
+          <ion-item>
+          <ion-label style="font-size:12px;font-weight: 500;">Years of Experience</ion-label>
+          <ion-select placeholder="Select exp" style="float:left;font-size:12px;" formControlName="exp">
+            <ion-select-option value="fresher" >0</ion-select-option>
+            <ion-select-option value="mid">1-3</ion-select-option>
+            <ion-select-option value="prof">4-6</ion-select-option>
+          </ion-select>
+        </ion-item>        
+
+        <div style="display: flex; justify-content: center;margin-top:25px">
+      <ion-button type="submit" >SUBMIT</ion-button>
+      </div>
+
+
+  </form>
+
+</ion-content>

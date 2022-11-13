@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>category</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+
+    
+
+  <ion-radio-group (ionChange)="radioGroupChange($event)" [(ngModel)]="selectedValue" #radioGroup>
+    <ion-list *ngFor="let item of category; let i = index">
+      <ion-item class="color-scheme-item-inactive">
+        <ion-thumbnail slot="start">
+          <img alt="Silhouette of mountains" src="https://teddiapp.com/app/assets/admin/image/category/{{item.images}}" />
+        </ion-thumbnail>
+        <ion-radio name="cat" [value]="item.id+'-'+item.category"></ion-radio>
+        <ion-label class="checkbox-label">{{item.category}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-radio-group>
+
+
+
+
+
+</ion-content>

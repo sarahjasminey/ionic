@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>CHAMP LOGIN</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating" >Mobile Number</ion-label>
+    <ion-input id="mobile" [(ngModel)]="mobile"></ion-input>
+  </ion-item>
+ 
+   <ion-item>
+    <ion-label position="floating" >OTP VERIFY</ion-label>
+    <ion-input id="otp" [(ngModel)]="otp"></ion-input>
+  </ion-item>
+ 
+
+
+  <ion-button (click)="sendotp()" >SEND OTP</ion-button>
+  <ion-button (click)="verifyotp()" >VERIFY OTP</ion-button>
+
+
+  
+</ion-content>

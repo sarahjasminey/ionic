@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Personal Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <form [formGroup]="ionicForm" (ngSubmit)="onSubmit()" padding-right>
+         
+        <ion-item>
+          <ion-label style="font-size:12px;font-weight: 500;">Name</ion-label>
+          <ion-input id="name"   formControlName="name" required></ion-input>
+        </ion-item>
+     
+        <ion-item>
+          <ion-label style="font-size:12px;font-weight: 500;">DOB</ion-label>
+          <ion-input formControlName="dob" type="date" max="{{year}}"  min="2000" (click)="keyup()"></ion-input>
+        </ion-item>  
+ 
+        <ion-item>
+          <ion-label style="font-size:12px;font-weight: 500;">Email</ion-label>
+          <ion-input id="email" formControlName="email"></ion-input>
+        </ion-item>
+
+          <!-- <ion-label style="font-size:12px;font-weight: 500;">Gender</ion-label>
+          <ion-toggle id="gender"></ion-toggle>
+           -->
+        <ion-item>
+            <ion-label style="font-size:12px;font-weight: 500;">Gender</ion-label>
+            <ion-select placeholder="Select Gender" style="float:left;font-size:12px;" formControlName="gender">
+              <ion-select-option value="male" >Male</ion-select-option>
+              <ion-select-option value="female">Female</ion-select-option>
+            </ion-select>        
+        </ion-item>
+      
+        <ion-item>
+          <ion-label style="font-size:12px;font-weight: 500;">Address</ion-label>
+          <ion-input id="address" formControlName="address"></ion-input>
+        </ion-item>  
+     
+        <ion-item>
+          <label style="font-size:12px;font-weight: 500;">Aadhar upload</label>        
+          <input type="file" name="file"  id="aadhar" size="small" formControlName="aadhar" (change)="uploadaadhar($event)" >
+        </ion-item>         
+        
+        <ion-item>
+          <label  style="font-size:12px;font-weight: 500;">Pan upload</label>
+          <input type="file" name="file"  id="pan" formControlName="pan" (change)="uploadpan($event)" />
+        </ion-item>  
+        <div style="display: flex; justify-content: center;margin-top:25px">
+      <ion-button type="submit" >Next</ion-button>
+      </div>
+
+  </form>
+
+</ion-content>
