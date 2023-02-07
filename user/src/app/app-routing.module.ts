@@ -7,7 +7,7 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'login',
+    path: '',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
@@ -27,7 +27,7 @@ const routes: Routes = [
     loadChildren: () => import('./create-job/create-job.module').then( m => m.CreateJobPageModule)
   },
   {
-    path: '',
+    path: 'category',
     loadChildren: () => import('./category/category.module').then( m => m.CategoryPageModule)
   },
   {

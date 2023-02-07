@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".Currentpage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    
+  <include
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:visibility="gone"
+      android:id="@+id/mainbar"
+      layout="@layout/app_bar_main"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
+
+        <fragment
+            android:id="@+id/fragment_autocomplete"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/mainbar"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainbar"
+            android:visibility="gone"
+            android:id="@+id/txtSelectedPlaceName"
+            android:layout_margin="20dp"
+            android:padding="15dp"
+            android:textSize="@dimen/place_autocomplete_prediction_primary_text"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_below="@+id/mainbar"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/currentloaction"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/currentloaction">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your location"
+            android:id="@+id/selectyourlocation"
+            android:textSize="18dp"
+            android:textColor="#111"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:id="@+id/line1"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/selectyourlocation"
+            android:background="#9C9999"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#6C6767"
+            android:text="Your Location"
+            android:id="@+id/yourlocation"
+            android:textAllCaps="true"
+            android:layout_below="@id/line1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="12dp"/>
+
+
+        <TextView
+            android:id="@+id/editcurrentlocation"
+            android:layout_width="300sp"
+            android:layout_height="40sp"
+            android:ems="10"
+            android:textColorHint = "#272222"
+            android:textAlignment="gravity"
+            android:gravity="left|center_vertical"
+            android:cursorVisible="true"
+            android:background="@null"
+            android:textSize="13sp"
+            android:singleLine="true"
+            android:layout_below="@+id/yourlocation"
+            android:layout_marginLeft="10dp"
+            android:selectAllOnFocus="true" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:id="@+id/line2"
+            android:layout_below="@id/editcurrentlocation"
+            android:background="#9C9999"
+            />
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/change"-->
+<!--            android:text="Change"-->
+<!--            android:textColor="#1396FD"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:textAllCaps="true"-->
+<!--           android:layout_above="@+id/line2" />-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/confirmlocation"
+            android:layout_height="50dp"
+            android:layout_below="@+id/line2"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:fontFamily="serif"
+            android:layout_marginTop="10dp"
+            android:text="confirm location"
+            android:textAllCaps="false"/>
+
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:backgroundTint="#fff"
+            android:id="@+id/bottom_sheet1"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/search_location_shape"
+            android:layout_height="350dp"
+            >
+
+            <!--
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
+                </RelativeLayout>
+            -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#111"
+                android:id="@+id/a"
+                android:text="Search location"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cancel_image"
+                android:id="@+id/backicon"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:id="@+id/line3"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/backicon"
+                android:background="#9C9999"
+                />
+
+
+
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:paddingLeft="20dp"
+                android:ems="10"
+                android:id="@+id/searbox"
+                android:hint="Search for your location..."
+                android:drawableLeft="@drawable/search_icon"
+                android:drawableStart="@drawable/search_icon"
+                android:textColorHint = "#272222"
+                android:textAlignment="gravity"
+                android:gravity="left|center_vertical"
+                android:cursorVisible="true"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"
+                android:singleLine="true"
+                android:layout_below="@+id/line3"
+                android:selectAllOnFocus="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="search"
+                android:textSize="13sp"
+                android:onClick="searchLocation"
+                android:id="@+id/search"
+                android:textColor="#0A8BF3"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_above="@+id/line4"
+                android:textStyle="bold"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:id="@+id/line4"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/searbox"
+                android:background="#9C9999"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use current location"
+                android:id="@+id/usecurrentlocation"
+                android:layout_below="@+id/line4"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/gps_fixed"
+                android:drawableStart="@drawable/gps_fixed"
+                android:textColor="#1396FD"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:id="@+id/line5"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/usecurrentlocation"
+                android:background="#9C9999"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Choose_language">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/R"
+        android:background="#1396FD">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arrow_back"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/T"
+            android:text="Welcome to Teddi"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Choose a language to get started."
+            android:layout_below="@+id/T"
+            android:textSize="15dp"
+            android:id="@+id/CL"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:id="@+id/listview"
+        android:listSelector="#E3ECEB"
+        android:layout_margin="5dp"
+        android:divider="@null"
+        android:dividerHeight="10.0sp"
+        android:layout_below="@+id/R"/>
+
+    <Button
+        android:id="@+id/Language_sumbitt"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1396FD"
+        android:layout_below="@+id/listview"
+        android:drawableRight="@drawable/arrow_forward"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Sumbit"
+        android:textSize="15dp" />
+
+
+
+</RelativeLayout>

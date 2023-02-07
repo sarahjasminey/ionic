@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Terms and Conditions"
+            android:layout_below="@+id/TUA"
+            android:id="@+id/TChead"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TChead"
+            android:id="@+id/TCdescr"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="If you have a website or software application, you will likely need to have Terms of Service or as some people call it – Terms of Use for it. Terms of Service or Terms and Conditions (T and C) will, in legal terms, limit your business or personal liability. "/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Privacy Policy"
+            android:layout_below="@+id/TCdescr"
+            android:id="@+id/TChead1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TChead1"
+            android:id="@+id/TCdescr1"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="If you have a website or software application, you will likely need to have Terms of Service or as some people call it – Terms of Use for it. Terms of Service or Terms and Conditions (T and C) will, in legal terms, limit your business or personal liability. "/>
+
+
+
+</RelativeLayout>

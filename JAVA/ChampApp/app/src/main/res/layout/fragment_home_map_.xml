@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Home_page_map"
+    android:layout_height="match_parent"
+    tools:context=".Home_map_Fragment">
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/homemap">
+    </fragment>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:visibility="gone"
+        android:id="@+id/timer">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip Job"
+            android:id="@+id/skip"
+            android:textAllCaps="false"
+            android:backgroundTint="#4454AC"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"/>
+
+
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:layout_width="121dp"
+            android:layout_height="90dp"
+
+            android:id="@+id/material_pro"
+            android:layout_above="@+id/re1"
+            android:layout_centerHorizontal="true"
+            style="@style/Widget.MaterialProgressBar.ProgressBar"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/counttime"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_above="@+id/re1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="25"
+            android:layout_marginBottom="20dp"
+            android:textSize="30sp" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/re1"
+            android:layout_margin="5dp"
+            android:background="@drawable/timer_shape"
+            android:layout_alignParentBottom="true">
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="#111"
+                android:textSize="15dp"
+                android:text="Category :"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/cate"
+                android:layout_marginLeft="80dp"
+                android:fontFamily="serif"
+                android:textColor="#111"
+                android:textSize="15dp"
+                android:text=" Helper"/>
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="60dp"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:textColor="#111"
+                android:textSize="15dp"
+                android:text="No.Of.Person :"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+               android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/noofperson"
+                android:fontFamily="serif"
+                android:textColor="#111"
+                android:textSize="15dp"
+                android:text=" 3"/>
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/cate"
+                android:textStyle="bold"
+                android:textColor="#111"
+                android:textSize="15dp"
+                android:text="Price :"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="80dp"
+                android:layout_below="@+id/cate"
+                android:id="@+id/pricevalue"
+                android:fontFamily="serif"
+                android:textColor="#111"
+                android:textSize="15dp"
+                android:text="600/-"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/noofperson"
+                android:textStyle="bold"
+                android:textColor="#111"
+                android:textSize="15dp"
+                android:text="No.Of.days :"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/noofperson"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="serif"
+                android:textColor="#111"
+                android:textSize="15dp"
+                android:text=" 1"/>
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/loca"
+                android:layout_below="@+id/pricevalue"
+                android:textStyle="bold"
+                android:textColor="#111"
+                android:textSize="15dp"
+                android:text="Location :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/pricevalue"
+                android:fontFamily="serif"
+                android:textColor="#111"
+                android:textSize="15dp"
+                android:text="No:10, Jaya Complex prithivipakkam main road, ambattur, chennai - 600053"/>
+
+
+
+            <Button
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/Accept_button"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:text="ACCEPT WORK"
+                android:backgroundTint="#4454AC"/>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/re2"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:id="@+id/re3"
+            android:background="@drawable/timer_shape"
+            android:layout_alignParentBottom="true">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location_on"
+                android:id="@+id/lo1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/lo2"
+                android:src="@drawable/location_on_red"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mani"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="#111"/>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="#111"
+                android:textSize="15dp"
+                android:text="10,Jaya complex prithivipakkam main road, ambattur, chennai - 600053"/>
+
+
+            <com.ebanx.swipebtn.SwipeButton
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                app:button_background="@drawable/swipebutton_shape"
+                android:id="@+id/sb_swipe"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                app:inner_text="ARRIVED"
+                app:inner_text_size="15sp"
+                app:button_image_disabled="@drawable/arrow_forward_black"
+                app:button_image_enabled="@drawable/arrow_forward_black"
+                app:inner_text_bottom_padding="8dp"
+                app:inner_text_top_padding="8dp"
+                app:button_left_padding="8dp"
+                app:button_right_padding="8dp"
+                app:button_bottom_padding="8dp"
+                app:button_top_padding="8dp"
+                app:inner_text_background="@drawable/te_shape"
+                />
+
+
+            <com.ebanx.swipebtn.SwipeButton
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                app:button_background="@drawable/swipebutton_shape"
+                android:id="@+id/sb_swipe2"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                app:inner_text="START WORK"
+                app:inner_text_size="15sp"
+                android:visibility="gone"
+                app:button_image_disabled="@drawable/arrow_forward_black"
+                app:button_image_enabled="@drawable/arrow_forward_black"
+                app:inner_text_bottom_padding="8dp"
+                app:inner_text_top_padding="8dp"
+                app:button_left_padding="8dp"
+                app:button_right_padding="8dp"
+                app:button_bottom_padding="8dp"
+                app:button_top_padding="8dp"
+                app:inner_text_background="@drawable/startwork_shape"
+                />
+
+
+            <com.ebanx.swipebtn.SwipeButton
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                app:button_background="@drawable/swipebutton_shape"
+                android:id="@+id/sb_swipe3"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                app:inner_text="COMPLETE WORK"
+                app:inner_text_size="15sp"
+                app:button_image_disabled="@drawable/arrow_forward_red"
+                app:button_image_enabled="@drawable/arrow_forward_red"
+                app:inner_text_bottom_padding="8dp"
+                app:inner_text_top_padding="8dp"
+                app:button_left_padding="8dp"
+                app:button_right_padding="8dp"
+                app:button_bottom_padding="8dp"
+                app:button_top_padding="8dp"
+                app:inner_text_background="@drawable/completebutton_shape"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

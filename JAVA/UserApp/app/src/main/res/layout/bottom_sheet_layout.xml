@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#111"
+        android:text="Search location"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cancel_image"
+        android:id="@+id/backicon"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:id="@+id/line3"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/backicon"
+        android:background="#9C9999"
+        />
+
+
+
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:paddingLeft="20dp"
+        android:ems="10"
+        android:id="@+id/searbox"
+        android:hint="Search for your location..."
+        android:drawableLeft="@drawable/search_icon"
+        android:drawableStart="@drawable/search_icon"
+        android:textColorHint = "#272222"
+        android:textAlignment="gravity"
+        android:gravity="left|center_vertical"
+        android:cursorVisible="true"
+        android:background="@null"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:singleLine="true"
+        android:layout_below="@+id/line3"
+        android:selectAllOnFocus="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="search"
+        android:textSize="13sp"
+        android:id="@+id/search"
+        android:textColor="#0A8BF3"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_above="@+id/line4"
+        android:textStyle="bold"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:id="@+id/line4"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/searbox"
+        android:background="#9C9999"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use current location"
+        android:id="@+id/usecurrentlocation"
+        android:layout_below="@+id/line4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/gps_fixed"
+        android:drawableStart="@drawable/gps_fixed"
+        android:textColor="#1396FD"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:id="@+id/line5"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/usecurrentlocation"
+        android:background="#9C9999"
+        />
+
+
+</RelativeLayout>

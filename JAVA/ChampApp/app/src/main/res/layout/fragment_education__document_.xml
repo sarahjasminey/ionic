@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".education_Document_Fragment">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:background="#1396FD"-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+<!--        android:elevation="4dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:id="@+id/backicon2"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/arrow_back"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/techknow"-->
+<!--                android:text="Education Details"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#fff"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:textSize="20dp"/>-->
+
+<!--        </RelativeLayout>-->
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Education Document"
+        android:fontFamily="serif"
+        android:textSize="18dp"
+        android:textColor="#111"
+        android:id="@+id/head3"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view3"
+        android:layout_below="@+id/head3"
+        android:layout_marginRight="105dp"
+        android:layout_marginLeft="105dp"
+        android:background="#1B1919"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/below10"
+        android:singleLine="true"
+        android:text="10th Below"
+        android:layout_below="@+id/head3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="#111"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/below101"
+        android:singleLine="true"
+        android:text="(Any Certificate)"
+        android:layout_below="@+id/below10"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="#111"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Mandatory"
+        android:text="Mandatory"
+        android:layout_below="@+id/below101"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="#1396FD"/>
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/below10sheet"
+        android:background="@drawable/cameraicon1"
+        android:layout_below="@+id/head3" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view4"
+        android:layout_below="@+id/below10sheet"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#8F8989"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MARKSHEET"
+        android:singleLine="true"
+        android:text="12th Mark sheet"
+        android:layout_below="@+id/view4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="#111"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/OR"
+        android:singleLine="true"
+        android:text="(or)"
+        android:layout_below="@+id/MARKSHEET"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:textSize="15dp"
+        android:textColor="#111"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:id="@+id/MARKSHEET10"
+        android:singleLine="true"
+        android:text="10th Mark Sheet"
+        android:layout_below="@+id/OR"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="#111"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Mandatory1"
+        android:text="Mandatory"
+        android:layout_below="@+id/MARKSHEET10"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="#1396FD"/>
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/schoolmarksheet"
+        android:background="@drawable/cameraicon1"
+        android:layout_below="@+id/view4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view1"
+        android:layout_below="@+id/Mandatory1"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#8F8989"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/degree_certificate"
+        android:singleLine="true"
+        android:text="Degree Certificate"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="#111"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Course_Complete"
+        android:singleLine="true"
+        android:text="(Course Complete)"
+        android:layout_below="@+id/degree_certificate"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="#111"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Mandatory2"
+        android:text="Mandatory"
+        android:layout_below="@+id/Course_Complete"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="#1396FD"/>
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/Degree_image"
+        android:background="@drawable/cameraicon1"
+        android:layout_below="@+id/view1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view2"
+        android:layout_below="@+id/Mandatory2"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#8F8989"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EXP_CER"
+        android:singleLine="true"
+        android:text="Experience Certificate"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="#111"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/optional"
+        android:text="Optional"
+        android:layout_below="@+id/EXP_CER"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="#1396FD"/>
+
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/expcer_image"
+        android:background="@drawable/cameraicon1"
+        android:layout_below="@+id/view2" />
+
+
+    <Button
+        android:id="@+id/sumbitt3"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1396FD"
+        android:layout_below="@+id/expcer_image"
+        android:drawableRight="@drawable/arrow_forward"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:text="Sumbit"
+        android:textSize="15dp" />
+
+
+
+</RelativeLayout>

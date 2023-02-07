@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".vehicle_Document_Fragment">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:background="#1396FD"-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+<!--        android:elevation="4dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:id="@+id/backicon2"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/arrow_back"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/techknow"-->
+<!--                android:text="Vehicle Details"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#fff"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:textSize="20dp"/>-->
+
+<!--        </RelativeLayout>-->
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Document"
+        android:fontFamily="serif"
+        android:textSize="18dp"
+        android:textColor="#111"
+        android:id="@+id/head2"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view3"
+        android:layout_below="@+id/head2"
+        android:layout_marginRight="120dp"
+        android:layout_marginLeft="120dp"
+        android:background="#1B1919"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aadharcard"
+        android:text="Driving Licence"
+        android:layout_below="@+id/head2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="#111"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Mandatory1"
+        android:text="Mandatory"
+        android:layout_below="@+id/aadharcard"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="#1396FD"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/aadharlayout"
+        android:layout_below="@+id/Mandatory1"
+        android:weightSum="2">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/drivingfrontimage"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/Mandatory1"
+            android:background="@drawable/cameraicon1"
+            android:layout_weight="1">
+        </ImageView>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="120dp"
+            android:scaleType="fitXY"
+            android:id="@+id/drivingbackimage"
+            android:background="@drawable/cameraicon1"
+            android:layout_below="@+id/Mandatory1"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Front Side"
+        android:layout_below="@+id/aadharlayout"
+        android:textColor="#111"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/backside"
+        android:layout_marginRight="50dp"
+        android:textColor="#111"
+        android:text="Back Side"
+        android:layout_below="@+id/aadharlayout"
+        android:layout_marginTop="10dp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view1"
+        android:layout_below="@+id/backside"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#8F8989"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pancard"
+        android:text="Vehicle Rc Book"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="#111"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/optional1"
+        android:text="Optional"
+        android:layout_below="@+id/pancard"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="#1396FD"/>
+
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/vehicleimage"
+        android:background="@drawable/cameraicon1"
+        android:layout_below="@+id/view1" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/frontsidepan"
+        android:layout_marginRight="50dp"
+        android:textColor="#111"
+        android:text="Front Side"
+        android:layout_below="@+id/vehicleimage"
+        android:layout_marginTop="10dp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view2"
+        android:layout_below="@+id/frontsidepan"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#8F8989"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2"
+        android:layout_below="@+id/view2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/LI1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Name"
+            android:paddingLeft="5dp"
+            android:layout_weight="1"
+            android:textColor="#111"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Number"
+            android:layout_marginLeft="45dp"
+            android:paddingLeft="5dp"
+            android:layout_weight="1"
+            android:textColor="#111"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2"
+        android:layout_below="@+id/LI1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/LI2">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:id="@+id/vehiclename"
+            android:hint="Enter"
+            android:layout_weight="1"
+            android:textColor="#111"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter"
+            android:id="@+id/vehiclenumber"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:textColor="#111"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2"
+        android:layout_below="@+id/LI2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/LI3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Color"
+            android:paddingLeft="5dp"
+            android:layout_weight="1"
+            android:textColor="#111"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Number"
+            android:visibility="invisible"
+            android:layout_marginLeft="45dp"
+            android:paddingLeft="5dp"
+            android:layout_weight="1"
+            android:textColor="#111"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2"
+        android:layout_below="@+id/LI3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/LI4">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:hint="Enter"
+            android:id="@+id/vcolor"
+            android:maxLength="2"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:textColor="#111"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter"
+            android:visibility="invisible"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:textColor="#111"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sumbitt2"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1396FD"
+        android:layout_below="@+id/LI4"
+        android:drawableRight="@drawable/arrow_forward"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:text="Sumbit"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>

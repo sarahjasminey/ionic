@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Teddy_2</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyACnr4sERwrbWWJOto6DNw6ZaRCf7WSiUM</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="OFFDUTY">OFF DUTY</string>
+    <string name="onduty">ON DUTY</string>
+
+    <style name="EditTextThemeOverlay" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@android:color/holo_blue_light</item>
+    </style>
+
+    <style name="HelperTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/holo_green_dark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="ErrorTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/holo_orange_dark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <string-array name="Select_degree">
+        <item>BA</item>
+        <item>BCom</item>
+        <item>Bsc-IT</item>
+        <item>Bsc-Computer</item>
+        <item>Bsc-Pharmacy</item>
+        <item>Bsc-Nursing</item>
+        <item>Bsc-Biology</item>
+        <item>Bsc-Chemistry</item>
+        <item>Bsc-Electronics</item>
+        <item>Bsc-Home Science</item>
+        <item>Bsc-Mathematics</item>
+        <item>Bsc-MLT</item>
+        <item>Bsc-Nutrition and Dietetics</item>
+        <item>Bsc-Physics</item>
+        <item>Bsc-Physical Science</item>
+        <item>Bsc-Physiotherapy</item>
+        <item>Bsc-other</item>
+        <item>BBA</item>
+        <item>Bca</item>
+        <item>BE</item>
+        <item>BTech</item>
+        <item>BPharma</item>
+        <item>BMS</item>
+        <item>BFSc</item>
+        <item>Diploma-Computer</item>
+        <item>Diploma-IT</item>
+        <item>Diploma-MLT</item>
+        <item>Diploma-Other</item>
+        <item>ITI Degree</item>
+        <item>MCom</item>
+        <item>MBA-Finance</item>
+        <item>MBA-Marketing</item>
+        <item>MBA-HR</item>
+        <item>MBA-Other</item>
+        <item>MA</item>
+        <item>Mca</item>
+        <item>Msc</item>
+        <item>Other</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

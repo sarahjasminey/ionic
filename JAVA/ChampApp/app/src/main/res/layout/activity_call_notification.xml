@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Call_notification">
+
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Skip Job"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:backgroundTint="#4454AC"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginTop="20dp"/>-->
+
+
+<!--    <me.zhanghai.android.materialprogressbar.MaterialProgressBar-->
+<!--        android:layout_width="121dp"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:id="@+id/material_pro"-->
+<!--        android:layout_above="@+id/re1"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        style="@style/Widget.MaterialProgressBar.ProgressBar"-->
+<!--        android:gravity="center"/>-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/counttime"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="44dp"-->
+<!--        android:layout_above="@+id/re1"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:gravity="center"-->
+<!--        android:text="25"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:textSize="30sp" />-->
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/re1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="250dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginBottom="13dp"-->
+<!--        android:background="@drawable/timer_shape">-->
+
+
+<!--        <TextView-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:text="10,Jaya complex prithivipakkam main road, ambattur, chennai - 600053"-->
+<!--            android:textColor="#111"-->
+<!--            android:textSize="15dp"-->
+<!--            android:textStyle="bold" />-->
+
+
+<!--        <Button-->
+<!--            android:layout_width="360dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginBottom="30dp"-->
+<!--            android:backgroundTint="#4454AC"-->
+<!--            android:text="ACCEPT WORK" />-->
+
+
+<!--    </RelativeLayout>-->
+
+</RelativeLayout>
+
+
+
+

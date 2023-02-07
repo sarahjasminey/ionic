@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/myhomee" android:title="Home" android:icon="@drawable/home_24"/>
+    <item android:id="@+id/myprofile" android:title="My Profile" android:icon="@drawable/myperson"/>
+    <item android:id="@+id/mybankdetails" android:title="Bank Details" android:icon="@drawable/account_balance_24"/>
+<!--    <item android:id="@+id/mywallet" android:title="Wallet" android:icon="@drawable/balance_wallet_24"/>-->
+<!--    <item android:id="@+id/mymap"-->
+<!--        android:title="" />-->
+</menu>
